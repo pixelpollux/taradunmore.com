@@ -63,6 +63,59 @@ body {
   background-color: #ECC0C0;
 }
 
+body .arrows {
+  position: relative;
+  /**/
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  /**/
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+}
+body .arrows:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 10px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+  transform: translate(10px, 40px) rotate(-45deg);
+  animation: arrows 3s linear infinite;
+}
+body .arrows:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-left: 10px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+  transform: translate(20px, 0px) rotate(-45deg);
+  animation: arrows 3s linear infinite -1.5s;
+}
+
+@keyframes arrows {
+  0% {
+    border-left: 10px solid #fe019a;
+    border-bottom: 10px solid #fe019a;
+    transform: translate(-5px, -20px) rotate(-45deg);
+  }
+  10%, 90% {
+    border-left: 10px solid #F1FC53;
+    border-bottom: 10px solid #F1FC53;
+  }
+  50% {
+    border-left: 10px solid rgba(0, 0, 0, 0.7);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+    transform: translate(-5px, 0px) rotate(-45deg);
+  }
+  100% {
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 10px solid rgba(0, 0, 0, 0);
+    transform: translate(-5px, 20px) rotate(-45deg);
+  }
+}
 .smallerheading {
   font-size: 10rem;
   letter-spacing: 1px;
@@ -98,7 +151,7 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-size: 40rem;
+  font-size: 30px;
   letter-spacing: 6px;
   left: calc(50% + 6px);
   top: calc(50% + 6px);
@@ -116,6 +169,10 @@ img#headshot {
   width: 60%;
   height: auto;
   border-radius: 20rem;
+  -webkit-text-stroke-width: 5px;
+  -moz-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #330036;
+  -moz-text-stroke-color: #330036;
 }
 
 nav.navbar-light {

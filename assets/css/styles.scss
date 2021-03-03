@@ -113,6 +113,69 @@ $halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKL
 }
 
 // ====================================================================================
+//down arrow 
+// ====================================================================================
+$size: 30px;
+$speed: 3s;
+$peakopacity:0.7;
+
+body {
+  .arrows {
+    position: relative;
+    /**/
+    position: absolute;
+    top:90%;
+    left:90%;
+    /**/
+    width:$size;
+    height:$size;
+    transform:translate(-50%,-50%);
+    &:before {
+      content: '';
+      position: absolute;
+      width:100%;
+      height:100%;
+      border-left:$size/3 solid rgba(0,0,0,$peakopacity);
+      border-bottom:$size/3 solid rgba(0,0,0,$peakopacity);
+      transform:translate($size/3,$size*4/3)rotate(-45deg);
+      animation: arrows $speed linear infinite;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width:100%;
+      height:100%;
+      border-left:$size/3 solid rgba(0,0,0,$peakopacity);
+      border-bottom:$size/3 solid rgba(0,0,0,$peakopacity);
+      transform:translate($size*2/3,0px)rotate(-45deg) ;
+      animation: arrows $speed linear infinite $speed/-2;
+    }
+  }
+}
+
+@keyframes arrows {
+  0% {
+      border-left:$size/3 solid $electric-pink;
+      border-bottom:$size/3 solid $electric-pink;
+      transform:translate($size/-6,$size*4/-6)rotate(-45deg) ;
+  }
+  10%, 90% {
+      border-left:$size/3 solid $electric-lemon;
+      border-bottom:$size/3 solid $electric-lemon;
+  }
+  50% {
+      border-left:$size/3 solid rgba(0,0,0,$peakopacity);
+      border-bottom:$size/3 solid rgba(0,0,0,$peakopacity);
+      transform:translate($size/-6,0px)rotate(-45deg) ;
+  }
+  100% {
+      border-left:$size/3 solid rgba(0,0,0,0);
+      border-bottom:$size/3 solid rgba(0,0,0,0);
+      transform:translate($size/-6,$size*4/6)rotate(-45deg) ;
+  }
+}
+
+// ====================================================================================
 //sidebar with name 
 // ====================================================================================
 
@@ -175,6 +238,8 @@ img#headshot {
     width: 60%;
     height: auto;
     border-radius: 20rem;
+    @include stroke-width(5px);
+    @include stroke-color($dark-purple);
 }
 
 
