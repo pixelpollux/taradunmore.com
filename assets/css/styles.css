@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;600;800&display=swap");
+body {
+  background-color: #E5E5E5;
+  font-family: "Karla", sans-serif;
+  font-size: 1.2rem;
+  color: #330036;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.heading {
+  font-size: 40rem;
+  letter-spacing: 6px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 900;
+  margin-top: 3rem;
+}
+.heading--stroke {
+  -webkit-text-stroke-width: 7px;
+  -moz-text-stroke-width: 7px;
+  -webkit-text-stroke-color: #330036;
+  -moz-text-stroke-color: #330036;
+  color: transparent;
+}
+.heading--shadow {
+  text-shadow: 9px 9px #fe019a;
+}
+.heading--stroke-shadow {
+  color: #4C191B;
+  text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
+}
+.heading--halftone {
+  position: relative;
+}
+.heading--halftone:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==") repeat;
+  -webkit-text-stroke-width: 0;
+  -moz-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 40rem;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  top: calc(50% + 6px);
+  content: "tara";
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.heading--halftone-color:after {
+  background-color: #ECC0C0;
+}
+
+.smallerheading {
+  font-size: 10rem;
+  letter-spacing: 1px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+}
+.smallerheading--stroke {
+  -webkit-text-stroke-width: 5px;
+  -moz-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #330036;
+  -moz-text-stroke-color: #330036;
+  color: transparent;
+}
+.smallerheading--shadow {
+  text-shadow: 6px 6px #fe019a;
+}
+.smallerheading--stroke-shadow {
+  color: #4C191B;
+  text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
+}
+.smallerheading--halftone {
+  position: relative;
+}
+.smallerheading--halftone:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==") repeat;
+  -webkit-text-stroke-width: 0;
+  -moz-text-stroke-width: 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 40rem;
+  letter-spacing: 6px;
+  left: calc(50% + 6px);
+  top: calc(50% + 6px);
+  content: "tara";
+  z-index: -1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.smallerheading--halftone-color:after {
+  background-color: #ECC0C0;
+}
+
+img#headshot {
+  margin-top: 4rem;
+  width: 60%;
+  height: auto;
+  border-radius: 20rem;
+}
+
+nav.navbar-light {
+  background-color: #E5E5E5;
+  border: 2px solid #F1FC53;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+#little-sections section {
+  border: #fe019a 1px solid;
+  border-radius: 20px;
+  padding: 30px;
+  padding-top: 3rem;
+}
+
+#little-sections .cute-sections {
+  border: 7px solid #63585E;
+  border-radius: 2rem;
+  box-shadow: -15px 22px 0 0 pink;
+  background-color: white;
+  padding: 0 1.2rem;
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  padding: 1.5rem;
+}
+
+/* position: relative;
+ top: 1px; */
+
+/*# sourceMappingURL=styles.css.map */

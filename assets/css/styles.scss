@@ -1,0 +1,264 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;600;800&display=swap');
+
+// font variables
+$montserrat: 'Montserrat', sans-serif;   
+$karla: 'Karla', sans-serif;
+
+// color variables
+$grey: #E5E5E5;
+$not-white: #FEFFEB;
+$electric-pink: #fe019a;
+$electric-lime: #B1F94F;
+$electric-lemon: #F1FC53;
+$dark-purple: #330036;
+
+body{
+    background-color: $grey;
+    font-family: $karla;
+    font-size: 1.2rem;
+    color: $dark-purple;
+}
+
+// ====================================================================================
+//hi banner 
+// ====================================================================================
+
+$body: #4C191B; //8F0000FF3D29 4C191B FAEFEF
+$stroke: #FF3D29;
+$shadow: #ECC0C0;
+$size: 40rem;
+$halfsize: 10rem;
+$halftone: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==");
+
+@mixin stroke-width($property) {
+	-webkit-text-stroke-width: $property;
+	-moz-text-stroke-width: $property;
+}
+
+@mixin stroke-color($property) {
+	-webkit-text-stroke-color: $property;
+	-moz-text-stroke-color: $property;
+}
+
+@mixin background-clip($property) {
+	-webkit-background-clip: $property;
+	-moz-background-clip: $property;
+	background-clip: $property;
+}
+
+@mixin fill-color($property) {
+	-webkit-text-fill-color: $property;
+	-moz-text-fill-color: $property;
+}
+
+.grid {
+	// display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	@media screen and (min-width: 768px) {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.heading {
+	font-size: $size;
+	letter-spacing: 6px;
+	margin: 0;
+    font-family: $montserrat, sans-serif;
+    font-weight: 900;
+    margin-top: 3rem;
+
+	&--stroke {
+		@include stroke-width(7px);
+		@include stroke-color($dark-purple);
+		color: transparent;
+	}
+
+	&--shadow {
+		text-shadow: 9px 9px $electric-pink;
+	}
+
+	&--stroke-shadow {
+		color: $body;
+		text-shadow: -2px 0 $stroke, 0 -2px $stroke, 2px 0 $stroke, 0 2px $stroke,
+			2px 2px $stroke, -2px -2px $stroke, -2px 2px $stroke, 2px -2px $stroke,
+			6px 6px $shadow;
+	}
+
+	&--halftone {
+		position: relative;
+
+		&:after {
+			background: $halftone repeat;
+			@include stroke-width(0);
+			@include background-clip(text);
+			@include fill-color(transparent);
+			font-size: $size;
+			letter-spacing: 6px;
+			left: calc(50% + 6px);
+			top: calc(50% + 6px);
+			content: "tara";
+			z-index: -1;
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
+
+		&-color {
+			&:after {
+				background-color: $shadow;
+			}
+		}
+	}
+}
+
+// ====================================================================================
+//sidebar with name 
+// ====================================================================================
+
+.smallerheading {
+	font-size: $halfsize;
+	letter-spacing: 1px;
+	margin: 0;
+    line-height: 1;
+    font-family: $montserrat, sans-serif;
+    font-weight: 700;
+    margin-top: 3rem;
+
+
+
+	&--stroke {
+		@include stroke-width(5px);
+		@include stroke-color($dark-purple);
+		color: transparent;
+	}
+
+	&--shadow {
+		text-shadow: 6px 6px $electric-pink;
+	}
+
+	&--stroke-shadow {
+		color: $body;
+		text-shadow: -2px 0 $stroke, 0 -2px $stroke, 2px 0 $stroke, 0 2px $stroke,
+			2px 2px $stroke, -2px -2px $stroke, -2px 2px $stroke, 2px -2px $stroke,
+			6px 6px $shadow;
+	}
+
+	&--halftone {
+		position: relative;
+
+		&:after {
+			background: $halftone repeat;
+			@include stroke-width(0);
+			@include background-clip(text);
+			@include fill-color(transparent);
+			font-size: $size;
+			letter-spacing: 6px;
+			left: calc(50% + 6px);
+			top: calc(50% + 6px);
+			content: "tara";
+			z-index: -1;
+			position: absolute;
+			transform: translate(-50%, -50%);
+		}
+
+		&-color {
+			&:after {
+				background-color: $shadow;
+			}
+		}
+	}
+}
+
+img#headshot {
+    margin-top: 4rem;
+    width: 60%;
+    height: auto;
+    border-radius: 20rem;
+}
+
+
+// ====================================================================================
+//navbar 
+// ====================================================================================
+nav.navbar-light{
+    background-color: $grey;
+    border: 2px solid #F1FC53;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    // background-color: transparent;
+}
+
+// ====================================================================================
+//sections 
+// ====================================================================================
+
+#little-sections section {
+    border: #fe019a 1px solid;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 3rem;
+}
+
+#little-sections .cute-sections{
+    border: 7px solid #63585E;
+    border-radius: 2rem;
+    box-shadow: -15px 22px 0 0 pink;
+    background-color: white;
+    padding: 0 1.2rem;
+    max-width: 50rem;
+    margin: 0 auto 3rem;
+    padding: 1.5rem;
+}
+
+// ====================================================================================
+//contact me form 
+// ====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// [type="submit"] {
+//     display: block;
+//     color: @complementary;
+//     font-weight: bold;
+//     border-radius: 2px;
+//     background: @primary;
+//     box-shadow: 5px 5px 0 0 @primary,
+//       inset 4px 4px 0 0 white;
+//     border: 2px solid @complementary; 
+//     border-radius: 3px;
+//     padding: 10px;
+//     width: 100%;
+//     margin: 0 auto;
+//     transition: background .3s;
+//     &:hover {
+//         background: white;
+//     box-shadow: 5px 5px 0 0 @primary,
+//       inset 4px 4px 0 0 white;
+//     }
+  
+//     &:active,
+//     &:focus {
+       /* position: relative;
+        top: 1px; */
+        // outline: none;
+       //  background: darken(@primary, 10%);
+//     }
+// }
