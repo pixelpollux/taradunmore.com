@@ -6,16 +6,6 @@ body {
   color: #330036;
 }
 
-.grid {
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-}
-@media screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .heading {
   font-size: 40rem;
   letter-spacing: 6px;
@@ -169,10 +159,8 @@ img#headshot {
   width: 60%;
   height: auto;
   border-radius: 20rem;
-  -webkit-text-stroke-width: 5px;
-  -moz-text-stroke-width: 5px;
-  -webkit-text-stroke-color: #330036;
-  -moz-text-stroke-color: #330036;
+  border: 2px solid #fe019a;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
 }
 
 nav.navbar-light {
@@ -182,6 +170,7 @@ nav.navbar-light {
   border-radius: 20px;
 }
 
+/* SHIFT */
 #little-sections section {
   border: #fe019a 1px solid;
   border-radius: 20px;
@@ -200,7 +189,32 @@ nav.navbar-light {
   padding: 1.5rem;
 }
 
-/* position: relative;
- top: 1px; */
+[type=submit] {
+  display: block;
+  color: #FEFFEB;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 2px;
+  background: #330036;
+  box-shadow: 7px 7px 0 0 #330036, inset 4px 4px 0 0 #E5E5E5;
+  border: 2px solid #fe019a;
+  border-radius: 3px;
+  padding: 10px;
+  width: 30%;
+  margin: 10px auto;
+  transition: background 0.3s;
+}
+[type=submit]:hover {
+  background: #FEFFEB;
+  box-shadow: 7px 7px 0 0 #330036, inset 4px 4px 0 0 #FEFFEB;
+  color: #330036;
+  border: 2px solid #fe019a;
+}
+[type=submit]:active, [type=submit]:focus {
+  /* position: relative;
+   top: 1px; */
+  outline: none;
+  background: #cb017b;
+}
 
 /*# sourceMappingURL=styles.css.map */
