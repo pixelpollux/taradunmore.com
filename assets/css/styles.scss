@@ -24,9 +24,9 @@ body{
 //hi banner 
 // ====================================================================================
 
-$body: #4C191B; //8F0000FF3D29 4C191B FAEFEF
-$stroke: #FF3D29;
-$shadow: #ECC0C0;
+// $body: #4C191B; //8F0000FF3D29 4C191B FAEFEF
+// $stroke: #FF3D29;
+// $shadow: #ECC0C0;
 // $size: 40rem;
 // $halfsize: 10rem;
 
@@ -40,18 +40,6 @@ $shadow: #ECC0C0;
 	-moz-text-stroke-color: $property;
 }
 
-// @mixin background-clip($property) {
-// 	-webkit-background-clip: $property;
-// 	-moz-background-clip: $property;
-// 	background-clip: $property;
-// }
-
-// @mixin fill-color($property) {
-// 	-webkit-text-fill-color: $property;
-// 	-moz-text-fill-color: $property;
-// }
-
-
 .heading {
 	font-size: 30vh;
 	letter-spacing: 6px;
@@ -59,6 +47,7 @@ $shadow: #ECC0C0;
     font-family: $montserrat, sans-serif;
     font-weight: 900;
     margin-top: 3rem;
+    text-align: center;
 
 	&--stroke {
 		@include stroke-width(7px);
@@ -68,13 +57,6 @@ $shadow: #ECC0C0;
 
 	&--shadow {
 		text-shadow: 9px 9px $electric-pink;
-	}
-
-	&--stroke-shadow {
-		color: $body;
-		text-shadow: -2px 0 $stroke, 0 -2px $stroke, 2px 0 $stroke, 0 2px $stroke,
-			2px 2px $stroke, -2px -2px $stroke, -2px 2px $stroke, 2px -2px $stroke,
-			6px 6px $shadow;
 	}
 }
 
@@ -153,6 +135,7 @@ body {
     font-family: $montserrat, sans-serif;
     font-weight: 700;
     margin-top: 3rem;
+    margin-bottom: .5rem;
 
 
 
@@ -165,12 +148,31 @@ body {
 	&--shadow {
 		text-shadow: 6px 6px $electric-pink;
 	}
+}
 
-	&--stroke-shadow {
-		color: $body;
-		text-shadow: -2px 0 $stroke, 0 -2px $stroke, 2px 0 $stroke, 0 2px $stroke,
-			2px 2px $stroke, -2px -2px $stroke, -2px 2px $stroke, 2px -2px $stroke,
-			6px 6px $shadow;
+.tinyheading {
+	font-size: 10vw;
+	letter-spacing: 1px;
+	// margin: 0;
+    line-height: 1;
+    font-family: $montserrat, sans-serif;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+
+
+
+	&--stroke {
+		@include stroke-width(5px);
+		@include stroke-color($dark-purple);
+		color: transparent;
+	}
+
+	&--shadow {
+		text-shadow: 6px 6px $electric-pink;
 	}
 }
 
@@ -178,6 +180,18 @@ img#headshot {
     margin-top: 4rem;
     width: 60%;
     height: auto;
+    border-radius: 20rem;
+    border: 2px solid $electric-pink;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+img#smallerheadshot {
+    margin-top: .5rem;
+    width: 60%;
+    height: auto;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 20rem;
     border: 2px solid $electric-pink;
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
@@ -267,12 +281,20 @@ nav.navbar-light{
     .heading {
         font-size: 50vh;
     }
+    // img#smallerheadshot {
+    //     margin-top: 1rem;
+    //     width: 40%;
+    // }
   }
 
-  @media only screen and (min-width: 800px) {
+  @media only screen and (min-width: 1100px) {
     .heading {
         font-size: 80vh;
     }
+    // img#smallerheadshot {
+    //     margin-top: 1rem;
+    //     width: 30%;
+    // }
   }
 
 

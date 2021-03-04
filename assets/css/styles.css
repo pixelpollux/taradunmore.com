@@ -13,6 +13,7 @@ body {
   font-family: "Montserrat", sans-serif, sans-serif;
   font-weight: 900;
   margin-top: 3rem;
+  text-align: center;
 }
 .heading--stroke {
   -webkit-text-stroke-width: 7px;
@@ -23,10 +24,6 @@ body {
 }
 .heading--shadow {
   text-shadow: 9px 9px #fe019a;
-}
-.heading--stroke-shadow {
-  color: #4C191B;
-  text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
 }
 
 body .arrows {
@@ -90,6 +87,7 @@ body .arrows:after {
   font-family: "Montserrat", sans-serif, sans-serif;
   font-weight: 700;
   margin-top: 3rem;
+  margin-bottom: 0.5rem;
 }
 .smallerheading--stroke {
   -webkit-text-stroke-width: 5px;
@@ -101,15 +99,46 @@ body .arrows:after {
 .smallerheading--shadow {
   text-shadow: 6px 6px #fe019a;
 }
-.smallerheading--stroke-shadow {
-  color: #4C191B;
-  text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
+
+.tinyheading {
+  font-size: 10vw;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.tinyheading--stroke {
+  -webkit-text-stroke-width: 5px;
+  -moz-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #330036;
+  -moz-text-stroke-color: #330036;
+  color: transparent;
+}
+.tinyheading--shadow {
+  text-shadow: 6px 6px #fe019a;
 }
 
 img#headshot {
   margin-top: 4rem;
   width: 60%;
   height: auto;
+  border-radius: 20rem;
+  border: 2px solid #fe019a;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+img#smallerheadshot {
+  margin-top: 0.5rem;
+  width: 60%;
+  height: auto;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 20rem;
   border: 2px solid #fe019a;
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
@@ -177,7 +206,7 @@ nav.navbar-light {
     font-size: 50vh;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1100px) {
   .heading {
     font-size: 80vh;
   }
