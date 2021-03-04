@@ -7,7 +7,7 @@ body {
 }
 
 .heading {
-  font-size: 40rem;
+  font-size: 30vh;
   letter-spacing: 6px;
   margin: 0;
   font-family: "Montserrat", sans-serif, sans-serif;
@@ -27,30 +27,6 @@ body {
 .heading--stroke-shadow {
   color: #4C191B;
   text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
-}
-.heading--halftone {
-  position: relative;
-}
-.heading--halftone:after {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==") repeat;
-  -webkit-text-stroke-width: 0;
-  -moz-text-stroke-width: 0;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 40rem;
-  letter-spacing: 6px;
-  left: calc(50% + 6px);
-  top: calc(50% + 6px);
-  content: "tara";
-  z-index: -1;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-.heading--halftone-color:after {
-  background-color: #ECC0C0;
 }
 
 body .arrows {
@@ -107,7 +83,7 @@ body .arrows:after {
   }
 }
 .smallerheading {
-  font-size: 10rem;
+  font-size: 10vw;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
@@ -129,30 +105,6 @@ body .arrows:after {
   color: #4C191B;
   text-shadow: -2px 0 #FF3D29, 0 -2px #FF3D29, 2px 0 #FF3D29, 0 2px #FF3D29, 2px 2px #FF3D29, -2px -2px #FF3D29, -2px 2px #FF3D29, 2px -2px #FF3D29, 6px 6px #ECC0C0;
 }
-.smallerheading--halftone {
-  position: relative;
-}
-.smallerheading--halftone:after {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAHElEQVQYV2NUVFT8f//+fUYGBgYGMAEDcA5IBQCKJQVmn76DhAAAAABJRU5ErkJggg==") repeat;
-  -webkit-text-stroke-width: 0;
-  -moz-text-stroke-width: 0;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  font-size: 30px;
-  letter-spacing: 6px;
-  left: calc(50% + 6px);
-  top: calc(50% + 6px);
-  content: "tara";
-  z-index: -1;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-.smallerheading--halftone-color:after {
-  background-color: #ECC0C0;
-}
 
 img#headshot {
   margin-top: 4rem;
@@ -170,7 +122,10 @@ nav.navbar-light {
   border-radius: 20px;
 }
 
-/* SHIFT */
+.content-container {
+  width: 100%;
+}
+
 #little-sections section {
   border: #fe019a 1px solid;
   border-radius: 20px;
@@ -215,6 +170,17 @@ nav.navbar-light {
    top: 1px; */
   outline: none;
   background: #cb017b;
+}
+
+@media only screen and (min-width: 600px) {
+  .heading {
+    font-size: 50vh;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .heading {
+    font-size: 80vh;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
