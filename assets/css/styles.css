@@ -210,6 +210,16 @@ input:focus {
   box-shadow: 4px 4px 0 0 #330036;
 }
 
+form#contact-form textarea {
+  width: 20rem;
+  height: 4rem;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  font-family: Tahoma, sans-serif;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
 [type=submit] {
   display: block;
   color: #FEFFEB;
