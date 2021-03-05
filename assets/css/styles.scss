@@ -4,6 +4,7 @@
 // font variables
 $montserrat: 'Montserrat', sans-serif;   
 $karla: 'Karla', sans-serif;
+$font-size: 1rem;
 
 // color variables
 $grey: #E5E5E5;
@@ -16,7 +17,7 @@ $dark-purple: #330036;
 body{
     background-color: $grey;
     font-family: $karla;
-    font-size: 1.2rem;
+    font-size: $font-size;
     color: $dark-purple;
 }
 
@@ -24,11 +25,6 @@ body{
 //hi banner 
 // ====================================================================================
 
-// $body: #4C191B; //8F0000FF3D29 4C191B FAEFEF
-// $stroke: #FF3D29;
-// $shadow: #ECC0C0;
-// $size: 40rem;
-// $halfsize: 10rem;
 
 @mixin stroke-width($property) {
 	-webkit-text-stroke-width: $property;
@@ -201,54 +197,95 @@ img#smallerheadshot {
 // ====================================================================================
 //navbar 
 // ====================================================================================
+
 nav.navbar-light{
     background-color: $grey;
     border: 2px solid #F1FC53;
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    margin-bottom: 1rem;
     // background-color: transparent;
 }
 
 // ====================================================================================
 //sections 
 // ====================================================================================
+section h2 {
+    font-family: $montserrat;
+    text-transform: lowercase;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    color: $dark-purple;
+    text-shadow: 3px 3px $electric-lemon;
+}
+
 .content-container {
     width: 100%;
 }
 
 #little-sections section {
-    border: #fe019a 1px solid;
+    border: $electric-pink 1px solid;
     border-radius: 20px;
-    padding: 30px;
+    padding: 3rem;
     padding-top: 3rem;
+    margin-top: 2rem;
 }
 
-#little-sections .cute-sections{
-    border: 7px solid #63585E;
-    border-radius: 2rem;
-    box-shadow: -15px 22px 0 0 pink;
-    background-color: white;
-    padding: 0 1.2rem;
-    max-width: 50rem;
-    margin: 0 auto 3rem;
-    padding: 1.5rem;
+// ====================================================================================
+//projects 
+// ====================================================================================
+
+section .card {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 1rem;
+    box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+}
+
+section .card img {
+    width: 80%;
+    border-radius: 1rem;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 // ====================================================================================
 //contact me form 
 // ====================================================================================
 
+input{
+  display: block;
+  width: 100%;
+  font-size: $font-size;
+  line-height: $font-size * 2;
+  font-family: $karla;
+  margin-bottom: $font-size * 2;
+  border: none;
+  border: 2px solid $electric-pink;
+  border-radius: 2rem;
+  background: $grey;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: $dark-purple;
+}
+  
+input:focus{
+  border: 2px solid $electric-pink;
+  box-shadow: 4px 4px 0 0 $dark-purple;
+}
+
 [type="submit"] {
     display: block;
     color: $not-white;
     font-weight: bold;
     font-family:  $montserrat;
-    border-radius: 2px;
     background: $dark-purple;
     box-shadow: 7px 7px 0 0 $dark-purple,
       inset 4px 4px 0 0 $grey;
     border: 2px solid $electric-pink; 
-    border-radius: 3px;
+    border-radius: 2rem;
     padding: 10px;
     width: 30%;
     margin: 10px auto;
@@ -281,20 +318,12 @@ nav.navbar-light{
     .heading {
         font-size: 50vh;
     }
-    // img#smallerheadshot {
-    //     margin-top: 1rem;
-    //     width: 40%;
-    // }
   }
 
   @media only screen and (min-width: 1100px) {
     .heading {
         font-size: 80vh;
     }
-    // img#smallerheadshot {
-    //     margin-top: 1rem;
-    //     width: 30%;
-    // }
   }
 
 

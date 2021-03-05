@@ -2,7 +2,7 @@
 body {
   background-color: #E5E5E5;
   font-family: "Karla", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #330036;
 }
 
@@ -149,6 +149,17 @@ nav.navbar-light {
   border: 2px solid #F1FC53;
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: lowercase;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #330036;
+  text-shadow: 3px 3px #F1FC53;
 }
 
 .content-container {
@@ -158,19 +169,45 @@ nav.navbar-light {
 #little-sections section {
   border: #fe019a 1px solid;
   border-radius: 20px;
-  padding: 30px;
+  padding: 3rem;
   padding-top: 3rem;
+  margin-top: 2rem;
 }
 
-#little-sections .cute-sections {
-  border: 7px solid #63585E;
+section .card {
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 1rem;
+  box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+}
+
+section .card img {
+  width: 80%;
+  border-radius: 1rem;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 2rem;
+  border: none;
+  border: 2px solid #fe019a;
   border-radius: 2rem;
-  box-shadow: -15px 22px 0 0 pink;
-  background-color: white;
-  padding: 0 1.2rem;
-  max-width: 50rem;
-  margin: 0 auto 3rem;
-  padding: 1.5rem;
+  background: #E5E5E5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: #330036;
+}
+
+input:focus {
+  border: 2px solid #fe019a;
+  box-shadow: 4px 4px 0 0 #330036;
 }
 
 [type=submit] {
@@ -178,11 +215,10 @@ nav.navbar-light {
   color: #FEFFEB;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
-  border-radius: 2px;
   background: #330036;
   box-shadow: 7px 7px 0 0 #330036, inset 4px 4px 0 0 #E5E5E5;
   border: 2px solid #fe019a;
-  border-radius: 3px;
+  border-radius: 2rem;
   padding: 10px;
   width: 30%;
   margin: 10px auto;
