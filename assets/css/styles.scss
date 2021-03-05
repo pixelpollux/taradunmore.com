@@ -255,36 +255,38 @@ section .card img {
 // ====================================================================================
 
 input{
-  display: block;
   width: 100%;
   font-size: $font-size;
   line-height: $font-size * 2;
-  font-family: $karla;
+  font-family: $karla, sans-serif;
   margin-bottom: $font-size * 2;
   border: none;
   border: 2px solid $electric-pink;
   border-radius: 2rem;
   background: $grey;
-  min-width: 250px;
-  padding-left: 5px;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   outline: none;
   color: $dark-purple;
 }
   
+//this wont override focus
+// form#contact-form textarea:focus, 
 input:focus{
   border: 2px solid $electric-pink;
   box-shadow: 4px 4px 0 0 $dark-purple;
 }
 
 form#contact-form textarea {
-    width: 20rem;
-	height: 4rem;
-	border: 3px solid #cccccc;
-	padding: 5px;
-	font-family: Tahoma, sans-serif;
-	// background-image: url(bg.gif);
-	background-position: bottom right;
-	background-repeat: no-repeat;
+    width: 100%;
+	max-height: 8rem;
+	border: 2px solid $electric-pink;
+	padding: 1.5rem;
+	font-family: $karla, sans-serif;
+    background-color: $grey;
+    border-radius: 2rem;
+    margin:0;
 }
 
 [type="submit"] {
@@ -298,7 +300,8 @@ form#contact-form textarea {
     border: 2px solid $electric-pink; 
     border-radius: 2rem;
     padding: 10px;
-    width: 30%;
+    width: 100%;
+    max-width: 15rem;
     margin: 10px auto;
     transition: background .3s;
     &:hover {
