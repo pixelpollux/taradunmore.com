@@ -167,11 +167,13 @@ section h2 {
 }
 
 #little-sections section {
-  border: #fe019a 1px solid;
+  border: #fe019a 2px solid;
   border-radius: 20px;
   padding: 3rem;
   padding-top: 3rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 4rem;
 }
 
 section .card {
@@ -244,7 +246,7 @@ form#contact-form textarea {
 }
 [type=submit]:active, [type=submit]:focus {
   /* position: relative;
-   top: 1px; */
+  top: 1px; */
   outline: none;
   background: #cb017b;
 }
