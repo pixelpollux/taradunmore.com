@@ -154,6 +154,10 @@ nav.navbar-light {
   padding-right: 2rem;
 }
 
+.navbar-collapse.collapse.in {
+  display: inline-block !important;
+}
+
 section h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
