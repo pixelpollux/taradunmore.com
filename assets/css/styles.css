@@ -80,7 +80,7 @@ body .arrows:after {
   }
 }
 .smallerheading {
-  font-size: 10vw;
+  font-size: 10rem;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
@@ -273,6 +273,11 @@ form#contact-form textarea {
 @media only screen and (min-width: 1100px) {
   .heading {
     font-size: 80vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .smallerheading {
+    font-size: 9rem;
   }
 }
 
