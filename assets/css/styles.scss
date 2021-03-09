@@ -124,7 +124,7 @@ body {
 // ====================================================================================
 
 .smallerheading {
-	font-size: 10rem;
+	font-size: 9rem;
 	letter-spacing: 1px;
 	margin: 0;
     line-height: 1;
@@ -221,7 +221,7 @@ section h2 {
     text-transform: lowercase;
     font-weight: 900;
     margin-bottom: 2rem;
-    font-size: 3rem;
+    font-size: 2rem;
     color: $dark-purple;
     text-shadow: 3px 3px $electric-lemon;
 }
@@ -233,7 +233,7 @@ section h2 {
 #little-sections section {
     border: $electric-pink 2px solid;
     border-radius: 20px;
-    padding: 3rem;
+    padding: 2rem;
     padding-top: 3rem;
     margin-top: 4rem;
     // margin-bottom: 6rem;
@@ -344,9 +344,22 @@ form#contact-form textarea {
 //media queries 
 // ====================================================================================
 
+@media only screen and (min-width: 500px) {
+    section h2 {
+        font-size: 2.5rem;
+    }
+}
 @media only screen and (min-width: 600px) {
     .heading {
         font-size: 50vh;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    #little-sections section {
+        padding: 3rem;
     }
 }
 

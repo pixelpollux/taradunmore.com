@@ -80,7 +80,7 @@ body .arrows:after {
   }
 }
 .smallerheading {
-  font-size: 10rem;
+  font-size: 9rem;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
@@ -163,7 +163,7 @@ section h2 {
   text-transform: lowercase;
   font-weight: 900;
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #330036;
   text-shadow: 3px 3px #F1FC53;
 }
@@ -175,7 +175,7 @@ section h2 {
 #little-sections section {
   border: #fe019a 2px solid;
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2rem;
   padding-top: 3rem;
   margin-top: 4rem;
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
@@ -265,9 +265,22 @@ form#contact-form textarea {
   background: #cb017b;
 }
 
+@media only screen and (min-width: 500px) {
+  section h2 {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (min-width: 600px) {
   .heading {
     font-size: 50vh;
+  }
+
+  section h2 {
+    font-size: 3rem;
+  }
+
+  #little-sections section {
+    padding: 3rem;
   }
 }
 @media only screen and (min-width: 1100px) {
