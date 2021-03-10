@@ -262,6 +262,7 @@ section .card img {
     height: auto;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 1rem;
 }
 
 // ====================================================================================
@@ -407,6 +408,10 @@ form#contact-form textarea {
         padding: 3rem;
     }
 
+    section#certifications h3{
+        letter-spacing: .2rem;
+    
+    }
 
 }
 
