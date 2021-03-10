@@ -6,6 +6,43 @@ body {
   color: #330036;
 }
 
+a {
+  text-decoration: none;
+  color: #fe019a;
+}
+
+a:hover {
+  color: #EDFF00;
+}
+
+.button_slide {
+  color: #fe019a;
+  border-radius: 10px;
+  padding: 6px 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: #330036;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 0 0 0 50px #99FE00;
+  border: 1px #99FE00 solid;
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
 .heading {
   font-size: 30vh;
   letter-spacing: 6px;
@@ -65,8 +102,8 @@ body .arrows:after {
     transform: translate(-5px, -20px) rotate(-45deg);
   }
   10%, 90% {
-    border-left: 10px solid #F1FC53;
-    border-bottom: 10px solid #F1FC53;
+    border-left: 10px solid #EDFF00;
+    border-bottom: 10px solid #EDFF00;
   }
   50% {
     border-left: 10px solid rgba(0, 0, 0, 0.7);
@@ -80,7 +117,7 @@ body .arrows:after {
   }
 }
 .smallerheading {
-  font-size: 10vw;
+  font-size: 9rem;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
@@ -101,7 +138,7 @@ body .arrows:after {
 }
 
 .tinyheading {
-  font-size: 10vw;
+  font-size: 3rem;
   letter-spacing: 1px;
   line-height: 1;
   font-family: "Montserrat", sans-serif, sans-serif;
@@ -150,6 +187,25 @@ nav.navbar-light {
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-collapse.collapse.in {
+  display: inline-block !important;
+}
+
+#navbar-content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#navbar-content a:hover {
+  color: #fe019a;
+}
+
+#navbar-content a:active {
+  color: #EDFF00;
 }
 
 section h2 {
@@ -157,9 +213,9 @@ section h2 {
   text-transform: lowercase;
   font-weight: 900;
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #330036;
-  text-shadow: 3px 3px #F1FC53;
+  text-shadow: 3px 3px #EDFF00;
 }
 
 .content-container {
@@ -169,14 +225,19 @@ section h2 {
 #little-sections section {
   border: #fe019a 2px solid;
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2rem;
   padding-top: 3rem;
   margin-top: 4rem;
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
-  margin-bottom: 4rem;
+}
+
+.section-links {
+  margin: 0;
+  color: transparent;
 }
 
 section .card {
+  border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.25);
   padding: 1rem;
   box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
@@ -188,6 +249,50 @@ section .card img {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  border-bottom: 1px solid #fe019a;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.project-links {
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+section#certifications .card {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+section#certifications h3 {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 1px solid #fe019a;
+}
+
+section#contact-me {
+  margin-bottom: 4rem;
+}
+
+#contact-me ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact-me ul li {
+  padding-right: 3rem;
+  font-size: 2rem;
+}
+
+#contact-me ul li a {
+  color: #fe019a;
 }
 
 input {
@@ -214,7 +319,7 @@ input:focus {
 
 form#contact-form textarea {
   width: 100%;
-  max-height: 8rem;
+  max-height: 7rem;
   border: 2px solid #fe019a;
   padding: 1.5rem;
   font-family: "Karla", sans-serif, sans-serif;
@@ -251,14 +356,55 @@ form#contact-form textarea {
   background: #cb017b;
 }
 
+@media only screen and (min-width: 500px) {
+  section h2 {
+    font-size: 2.5rem;
+  }
+}
 @media only screen and (min-width: 600px) {
   .heading {
     font-size: 50vh;
+  }
+
+  section h2 {
+    font-size: 3rem;
+  }
+
+  #little-sections section {
+    padding: 3rem;
+  }
+
+  section#certifications h3 {
+    letter-spacing: 0.2rem;
   }
 }
 @media only screen and (min-width: 1100px) {
   .heading {
     font-size: 80vh;
+  }
+
+  #contact-me ul {
+    padding-left: 0;
+  }
+
+  #contact-me ul li {
+    display: inline;
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+
+  #contact-me ul li a {
+    color: #330036;
+    text-decoration: none;
+  }
+
+  #contact-me ul li a:hover {
+    color: #fe019a;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .smallerheading {
+    font-size: 9rem;
   }
 }
 
