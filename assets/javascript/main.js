@@ -3,3 +3,4 @@ jQuery(document).ready(function(){
             $(".navbar-collapse").toggleClass('in');
     });
 });
+
