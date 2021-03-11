@@ -96,8 +96,8 @@ body .arrows:after {
     transform: translate(-5px, -20px) rotate(-45deg);
   }
   10%, 90% {
-    border-left: 10px solid #EDFF00;
-    border-bottom: 10px solid #EDFF00;
+    border-left: 10px solid #F1FC53;
+    border-bottom: 10px solid #F1FC53;
   }
   50% {
     border-left: 10px solid rgba(0, 0, 0, 0.7);
@@ -111,7 +111,7 @@ body .arrows:after {
   }
 }
 .smallerheading {
-  font-size: 9rem;
+  font-size: 10vw;
   letter-spacing: 1px;
   margin: 0;
   line-height: 1;
@@ -132,7 +132,7 @@ body .arrows:after {
 }
 
 .tinyheading {
-  font-size: 3rem;
+  font-size: 10vw;
   letter-spacing: 1px;
   line-height: 1;
   font-family: "Montserrat", sans-serif, sans-serif;
@@ -181,6 +181,7 @@ nav.navbar-light {
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-bottom: 1rem;
+
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -208,9 +209,9 @@ section h2 {
   text-transform: lowercase;
   font-weight: 900;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #330036;
-  text-shadow: 3px 3px #EDFF00;
+  text-shadow: 3px 3px #F1FC53;
 }
 
 .content-container {
@@ -220,19 +221,14 @@ section h2 {
 #little-sections section {
   border: #fe019a 2px solid;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 3rem;
   padding-top: 3rem;
   margin-top: 4rem;
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
-}
-
-.section-links {
-  margin: 0;
-  color: transparent;
+  margin-bottom: 4rem;
 }
 
 section .card {
-  border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.25);
   padding: 1rem;
   border-radius: 10px;
@@ -246,6 +242,7 @@ section .card img {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+
   margin-bottom: 1rem;
 }
 
@@ -309,7 +306,7 @@ input:focus {
 
 form#contact-form textarea {
   width: 100%;
-  max-height: 7rem;
+  max-height: 8rem;
   border: 2px solid #fe019a;
   padding: 1.5rem;
   font-family: "Karla", sans-serif, sans-serif;
@@ -347,55 +344,14 @@ form#contact-form textarea {
   background: #cb017b;
 }
 
-@media only screen and (min-width: 500px) {
-  section h2 {
-    font-size: 2.5rem;
-  }
-}
 @media only screen and (min-width: 600px) {
   .heading {
     font-size: 50vh;
-  }
-
-  section h2 {
-    font-size: 3rem;
-  }
-
-  #little-sections section {
-    padding: 3rem;
-  }
-
-  section#certifications h3 {
-    letter-spacing: 0.2rem;
   }
 }
 @media only screen and (min-width: 1100px) {
   .heading {
     font-size: 80vh;
-  }
-
-  #contact-me ul {
-    padding-left: 0;
-  }
-
-  #contact-me ul li {
-    display: inline;
-    padding-right: 3rem;
-    font-size: 2rem;
-  }
-
-  #contact-me ul li a {
-    color: #330036;
-    text-decoration: none;
-  }
-
-  #contact-me ul li a:hover {
-    color: #fe019a;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .smallerheading {
-    font-size: 9rem;
   }
 }
 

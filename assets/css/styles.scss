@@ -10,14 +10,9 @@ $font-size: 1rem;
 $grey: #E5E5E5;
 $not-white: #FEFFEB;
 $electric-pink: #fe019a;
-$electric-lime: #99FE00;
-$electric-lemon: #EDFF00;
+$electric-lime: #B1F94F;
+$electric-lemon: #F1FC53;
 $dark-purple: #330036;
-
-
-// ====================================================================================
-//basics 
-// ====================================================================================
 
 body{
     background-color: $grey;
@@ -170,7 +165,7 @@ body {
 // ====================================================================================
 
 .smallerheading {
-	font-size: 9rem;
+	font-size: 10vw;
 	letter-spacing: 1px;
 	margin: 0;
     line-height: 1;
@@ -193,7 +188,7 @@ body {
 }
 
 .tinyheading {
-	font-size: 3rem;
+	font-size: 10vw;
 	letter-spacing: 1px;
 	// margin: 0;
     line-height: 1;
@@ -250,8 +245,6 @@ nav.navbar-light{
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     margin-bottom: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     // background-color: transparent;
 }
 
@@ -274,7 +267,6 @@ nav.navbar-light{
     color: $electric-lemon;
 }
 
-
 // ====================================================================================
 //sections 
 // ====================================================================================
@@ -283,7 +275,7 @@ section h2 {
     text-transform: lowercase;
     font-weight: 900;
     margin-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: $dark-purple;
     text-shadow: 3px 3px $electric-lemon;
 }
@@ -295,16 +287,11 @@ section h2 {
 #little-sections section {
     border: $electric-pink 2px solid;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 3rem;
     padding-top: 3rem;
     margin-top: 4rem;
-    // margin-bottom: 6rem;
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25) ;
-}
-
-.section-links {
-    margin: 0;
-    color: transparent;
+    margin-bottom: 4rem;
 }
 
 // ====================================================================================
@@ -312,7 +299,6 @@ section h2 {
 // ====================================================================================
 
 section .card {
-    border: 1px solid transparent;
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1rem;
     // box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
@@ -329,7 +315,6 @@ section .card img {
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 1rem;
 }
 
 h4 {
@@ -367,28 +352,9 @@ section#certifications h3{
 
 }
 
-
 // ====================================================================================
 //contact me form 
 // ====================================================================================
-
-section#contact-me{
-    margin-bottom: 4rem;
-}
-
-#contact-me ul{
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#contact-me ul li {
-    padding-right: 3rem;
-    font-size: 2rem;
-}
-
-#contact-me ul li a{
-    color: $electric-pink;
-}
 
 input{
     width: 100%;
@@ -416,7 +382,7 @@ input:focus{
 
 form#contact-form textarea {
     width: 100%;
-	max-height: 7rem;
+	max-height: 8rem;
 	border: 2px solid $electric-pink;
 	padding: 1.5rem;
 	font-family: $karla, sans-serif;
@@ -464,59 +430,15 @@ form#contact-form textarea {
 //media queries 
 // ====================================================================================
 
-@media only screen and (min-width: 500px) {
-    section h2 {
-        font-size: 2.5rem;
-    }
-}
 @media only screen and (min-width: 600px) {
     .heading {
         font-size: 50vh;
     }
-
-    section h2 {
-        font-size: 3rem;
-    }
-
-    #little-sections section {
-        padding: 3rem;
-    }
-
-    section#certifications h3{
-        letter-spacing: .2rem;
-    
-    }
-
 }
 
 @media only screen and (min-width: 1100px) {
     .heading {
         font-size: 80vh;
-    }
-
-    #contact-me ul{
-        padding-left: 0;
-    }
-    
-    #contact-me ul li {
-        display: inline;
-        padding-right: 3rem;
-        font-size: 2rem;
-    }
-
-    #contact-me ul li a{
-        color: $dark-purple;
-        text-decoration: none;
-    }
-
-    #contact-me ul li a:hover {
-        color: $electric-pink;
-    }
-}
-
-@media only screen and (min-width: 1400px) {
-    .smallerheading {
-        font-size: 9rem;
     }
 }
 
