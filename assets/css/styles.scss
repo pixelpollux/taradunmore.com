@@ -24,6 +24,8 @@ body{
     font-family: $karla;
     font-size: $font-size;
     color: $dark-purple;
+    // background-image: url("assets/images/asfalt-dark.png") repeat;
+    // background-repeat: repeat;
 }
 
 a{
@@ -38,18 +40,15 @@ a:hover {
 
 .button_slide {
     color: $electric-pink;
-    // border: 1px solid $dark-purple;
     border-radius: 10px;
     padding: 6px 10px;
     display: inline-block;
     font-weight: 600;
     font-family: $montserrat;
-    // font-size: 14px;
     margin-right: 1rem;
     letter-spacing: 2px;
     cursor: pointer;
     background-color: $dark-purple;
-    // box-shadow: inset 0 0 0 50px $electric-pink;
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
@@ -58,15 +57,15 @@ a:hover {
 
 .slide_right:hover {
     box-shadow: inset 0 0 0 50px $electric-lime;
-    border: 1px $electric-lime solid;
+    border: 1px $electric-lemon solid;
     // box-shadow: inset 400px 0 0 0 $electric-lime;
 }
 
-#outer {
-    width: 364px;
-    margin: 50px auto 0 auto;
-    text-align: center;
-}
+// #outer {
+//     width: 364px;
+//     margin: 50px auto 0 auto;
+//     text-align: center;
+// }
 
 // ====================================================================================
 //hi banner 
@@ -268,6 +267,7 @@ nav.navbar-light{
 
 #navbar-content a:hover {
     color: $electric-pink;
+    cursor: pointer;
 }
 
 #navbar-content a:active{
@@ -315,7 +315,12 @@ section .card {
     border: 1px solid transparent;
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1rem;
-    box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+    // box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+    
+    border-radius: 10px;
+    // border: 1px solid transparent;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
+    margin-bottom: 2rem;
 }
 
 section .card img {
@@ -347,12 +352,12 @@ h4 {
 //     border: 1px solid transparent;
 // }
 
-section#certifications .card{
-    border-radius: 10px;
-    border: 1px solid transparent;
-    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
-    margin-bottom: 2rem;
-}
+// section#certifications .card{
+//     border-radius: 10px;
+//     border: 1px solid transparent;
+//     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
+//     margin-bottom: 2rem;
+// }
 
 section#certifications h3{
     font-family: $montserrat, sans-serif;
@@ -441,6 +446,7 @@ form#contact-form textarea {
         inset 4px 4px 0 0 $not-white;
         color: $dark-purple;
         border: 2px solid $electric-pink; 
+        cursor: pointer;
 
     }
     &:active,
