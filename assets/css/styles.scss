@@ -19,7 +19,48 @@ body{
     font-family: $karla;
     font-size: $font-size;
     color: $dark-purple;
+    // background-image: url("assets/images/asfalt-dark.png") repeat;
+    // background-repeat: repeat;
 }
+
+a{
+    text-decoration: none;
+    color: $electric-pink;
+
+}
+
+a:hover {
+    color: $electric-lemon;
+}
+
+.button_slide {
+    color: $electric-pink;
+    border-radius: 10px;
+    padding: 6px 10px;
+    display: inline-block;
+    font-weight: 600;
+    font-family: $montserrat;
+    margin-right: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: $dark-purple;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+    box-shadow: inset 0 0 0 50px $electric-lime;
+    border: 1px $electric-lemon solid;
+    // box-shadow: inset 400px 0 0 0 $electric-lime;
+}
+
+// #outer {
+//     width: 364px;
+//     margin: 50px auto 0 auto;
+//     text-align: center;
+// }
 
 // ====================================================================================
 //hi banner 
@@ -207,6 +248,25 @@ nav.navbar-light{
     // background-color: transparent;
 }
 
+.navbar-collapse.collapse.in {
+    display: inline-block!important;
+}
+
+#navbar-content a{
+    font-family: $montserrat;
+    // font-size: 1rem;
+    font-weight: 600;
+}
+
+#navbar-content a:hover {
+    color: $electric-pink;
+    cursor: pointer;
+}
+
+#navbar-content a:active{
+    color: $electric-lemon;
+}
+
 // ====================================================================================
 //sections 
 // ====================================================================================
@@ -241,7 +301,12 @@ section h2 {
 section .card {
     background-color: rgba(255, 255, 255, 0.25);
     padding: 1rem;
-    box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+    // box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+    
+    border-radius: 10px;
+    // border: 1px solid transparent;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
+    margin-bottom: 2rem;
 }
 
 section .card img {
@@ -250,6 +315,41 @@ section .card img {
     height: auto;
     margin-right: auto;
     margin-left: auto;
+}
+
+h4 {
+    border-bottom: 1px solid $electric-pink;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+
+.project-links {
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+// ====================================================================================
+//certifications 
+// ====================================================================================
+
+
+
+// section#certifications {
+//     border: 1px solid transparent;
+// }
+
+// section#certifications .card{
+//     border-radius: 10px;
+//     border: 1px solid transparent;
+//     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
+//     margin-bottom: 2rem;
+// }
+
+section#certifications h3{
+    font-family: $montserrat, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: 1px solid $electric-pink;
+
 }
 
 // ====================================================================================
@@ -312,6 +412,7 @@ form#contact-form textarea {
         inset 4px 4px 0 0 $not-white;
         color: $dark-purple;
         border: 2px solid $electric-pink; 
+        cursor: pointer;
 
     }
     &:active,

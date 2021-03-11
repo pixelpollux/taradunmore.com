@@ -6,6 +6,37 @@ body {
   color: #330036;
 }
 
+a {
+  text-decoration: none;
+  color: #fe019a;
+}
+
+a:hover {
+  color: #EDFF00;
+}
+
+.button_slide {
+  color: #fe019a;
+  border-radius: 10px;
+  padding: 6px 10px;
+  display: inline-block;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin-right: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: #330036;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 0 0 0 50px #99FE00;
+  border: 1px #EDFF00 solid;
+}
+
 .heading {
   font-size: 30vh;
   letter-spacing: 6px;
@@ -150,6 +181,27 @@ nav.navbar-light {
   box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-bottom: 1rem;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.navbar-collapse.collapse.in {
+  display: inline-block !important;
+}
+
+#navbar-content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+#navbar-content a:hover {
+  color: #fe019a;
+  cursor: pointer;
+}
+
+#navbar-content a:active {
+  color: #EDFF00;
 }
 
 section h2 {
@@ -179,7 +231,9 @@ section h2 {
 section .card {
   background-color: rgba(255, 255, 255, 0.25);
   padding: 1rem;
-  box-shadow: 4px 7px 20px rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 section .card img {
@@ -188,6 +242,44 @@ section .card img {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+
+  margin-bottom: 1rem;
+}
+
+h4 {
+  border-bottom: 1px solid #fe019a;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.project-links {
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+section#certifications h3 {
+  font-family: "Montserrat", sans-serif, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  border-bottom: 1px solid #fe019a;
+}
+
+section#contact-me {
+  margin-bottom: 4rem;
+}
+
+#contact-me ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact-me ul li {
+  padding-right: 3rem;
+  font-size: 2rem;
+}
+
+#contact-me ul li a {
+  color: #fe019a;
 }
 
 input {
@@ -243,6 +335,7 @@ form#contact-form textarea {
   box-shadow: 7px 7px 0 0 #330036, inset 4px 4px 0 0 #FEFFEB;
   color: #330036;
   border: 2px solid #fe019a;
+  cursor: pointer;
 }
 [type=submit]:active, [type=submit]:focus {
   /* position: relative;
