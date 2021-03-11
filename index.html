@@ -19,6 +19,9 @@
 
     <!-- google fonts -->
 
+    <!-- scripts -->
+    <!-- <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
 
 </head>
 
@@ -44,44 +47,42 @@
                 <h1 class="smallerheading smallerheading--stroke smallerheading--shadow">i'm tara!</h1>
             </div>
 
-            <!-- <div class="d-block d-xl-none row">
-                <img class=" col-6" id="smallerheadshot" src="assets/images/headshot.JPG" alt="headshot of me">
-                <h1 class="col-6 tinyheading tinyheading--stroke tinyheading--shadow">i'm tara!</h1>
-            </div> -->
-
             <!-- right side -->
             <div class="col-12 right-side ">
 
-                <nav class="navbar navbar-expand-sm sticky-top navbar-light shift">
+                <nav class="navbar navbar-expand-lg sticky-top navbar-light shift">
                     <div class="container">
                         <a class="navbar-brand" href="#">home</a>
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                            data-target="#navbar1">
+                        <!-- collapse button -->
+                        <button 
+                            class="navbar-toggler navbar-toggler-right" 
+                            type="button" 
+                            data-toggle="collapse"
+                            data-target="#navbar-content">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbar1">
+                        <!-- content to be collapsed -->
+                        <div class="collapse navbar-collapse" id="navbar-content">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#about-me">about me</a>
+                                    <a class="nav-link"  data-toggle="collapse" data-target="#navbar-collapse" href="#about-me-link">about me</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#experience-link">experience</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#projects-link">projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#experience">experience</a>
+                                    <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#certifications-link">certifications</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#projects">projects</a>
+                                    <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#contact-link">contact me</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#contact-me">contact me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#certifications">certifications</a>
+                                    <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="assets/resume322021.pdf">resumé</a>
                                 </li>
                             </ul>
-                            <!-- <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                            </ul> -->
                         </div>
                     </div>
                 </nav>
@@ -91,25 +92,29 @@
 
                     <div class="row">
                         <div class="col-12" id="little-sections">
-                            <!-- <h2>Content...</h2>
-                            <h5>Scroll down to see the Navbar stick</h5> -->
+
+                            <div class="section-links" id="about-me-link">about me section</div>
+
                             <section id="about-me">
                                 <h2>About Me</h2>
                                 <p>
-                                    I've been obsessed with tech as long as I can remember. I'm currently on a journey to wrap that passion in actual talent and technical skills. I've spent the entirety of the pandemic (2021-2021) learning and applying what I've learned to push myself further.
+                                    I've been obsessed with tech as long as I can remember. I'm currently on a journey
+                                    to wrap that passion in actual talent and technical skills. I've spent the entirety
+                                    of the pandemic (2021-2021) learning and applying what I've learned to push myself
+                                    further.
                                 </p>
                             </section>
 
-                            <section id="experience">
+                            <div class="section-links" id="experience-link">experience section</div>
+
+                            <!-- <section id="experience">
                                 <h2>Experience</h2>
                                 <p>
-                                    Tart jujubes tootsie roll jelly beans croissant chocolate cake pie pudding. Powder
-                                    gingerbread pudding lollipop powder cheesecake chocolate jelly cake. Dragée lollipop
-                                    powder jelly dessert candy cake halvah ice cream. Soufflé jelly chupa chups cotton
-                                    candy. Gummi bears tiramisu cake candy dragée brownie halvah jelly-o. Fruitcake
-                                    lemon drops halvah toffee lemon drops tiramisu marshmallow lemon drops.
+                                    A future experience section perhaps.
                                 </p>
-                            </section>
+                            </section> -->
+
+                            <div class="section-links" id="projects-link"> a</div>
 
                             <section id="projects">
                                 <h2>Projects</h2>
@@ -138,16 +143,7 @@
                                     <!-- future projects -->
                                     <!-- <div class="col-lg-4 col-md-6 col-12 card">
                                         <img src="https://via.placeholder.com/300/FEFFEB/fe019a" alt="">
-                                        <h3>ticket tracker</h3>
-                                        <p class="project-links">github | live</p>
-                                        <p class="project-description">
-                                            Created in a group using Agile methodology. Acted as group senior (Created
-                                            github repository, handled pull requests)
-                                        </p>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 col-12 card">
-                                        <img src="https://via.placeholder.com/300/FEFFEB/fe019a" alt="">
-                                        <h3>Title</h3>
+                                        <h4>Title</h4>
                                         <h5>link | link</h5>
                                         <p>
                                             Candy canes pastry apple pie. Gingerbread gingerbread croissant chocolate
@@ -156,21 +152,44 @@
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-12 card">
                                         <img src="https://via.placeholder.com/300/FEFFEB/fe019a" alt="">
-                                        <h3>Title</h3>
+                                        <h4>Title</h4>
                                         <h5>link | link</h5>
                                         <p>
                                             Candy canes pastry apple pie. Gingerbread gingerbread croissant chocolate
                                             cake tart chupa chups. Apple pie danish tiramisu lemon drops gummies halvah.
                                         </p>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </section>
 
+                            <div class="section-links" id="certifications-link">certifications section</div>
+
                             <section id="certifications">
-                                <H2>Certifications</H2>
-                                <div id="card-container">
+                                <H2>Certifications</H2> 
+                                <p>Bootcamps I've done and what I took out of them.</p>
+                                <article class="card col-12">
+                                    <h3>Skilled KC Technical Institute</h3>
+                                    <p>2020-2021</p>
+                                    <ul>
+                                        <li>Continued Learning JavaScript, including React.</li>
+                                        <li>Learned to create and manipulate MongoDB cloud databases.</li>
+                                        <li>Worked in small developer teams using Agile Methodology to enrich co-working skills.</li>
+                                        <li>Created and used Trello boards on solo projects and with teams</li>
+                                    </ul>
+                                </article>
+                                <article class="card col-12">
+                                    <h3>LaunchCode LC101</h3>
+                                    <p>2019-2020</p>
+                                    <ul>
+                                        <li>Learned JavaScript and Angular.</li>
+                                        <li>Learned Java, along with Thymeleaf.</li>
+                                        <li>Learned to create and manipulate SQL/MySQL databases.</li>
+                                        <li>Worked in small developer teams to enrich co-working skills.</li>
+                                    </ul>
+                                </article>
+                                <!-- <div id="card-container">
                                     <div class="row">
-                                        <div class="card col-6">
+                                        <div >
                                             <p>
                                                 Pie cotton candy croissant sweet. Chupa chups marzipan soufflé dessert
                                                 powder powder marshmallow candy canes. Gummi bears jelly cotton candy
@@ -197,20 +216,41 @@
                                         croissant. Macaroon chupa chups marzipan cookie tart. Brownie chocolate cake
                                         halvah. Topping tiramisu bonbon caramels biscuit.
                                     </p>
-                                </div>
+                                </div> -->
                             </section>
+
+                            <div class="section-links" id="contact-link">contact section</div>
 
                             <section id="contact-me">
                                 <h2>how to reach me!</h2>
                                 <div id="socials">
                                     <ul>
-                                        <li><i class="fab fa-linkedin"></i></li>
-                                        <li><i class="fab fa-github"></i></li>
-                                        <!-- <li></li> -->
+                                        <li>
+                                            <a href="https://www.linkedin.com/in/tarajdunmore/">
+                                                <button class="btn button_slide slide_right">
+                                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://github.com/qualmless">
+                                                <button class="btn button_slide slide_right">
+                                                    <i class="fab fa-github"></i> GitHub
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="mailto:howtoencryptmyemail@yoursite.com">
+                                                <button class="btn button_slide slide_right">
+                                                    <i class="far fa-envelope"></i> Email
+                                                </button>
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
-                                <p>or send me a message here!</p>
-                                <form id="contact-form" action="POST">
+                                <!-- form not operational at this time -->
+                                <!-- <p>or send me a message here!</p>
+                                <form id="contact-form" method="POST" action="https://formsubmit.io/send/terasmash@gmail.com">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <input class="d-lg-inline" type="text" name="inputName" id="inputName"
@@ -219,11 +259,11 @@
                                                 placeholder="email" maxlength="25" required />
                                         </div>
                                         <div class="col-lg-6">
-                                            ​ <textarea id="txtArea"></textarea>
+                                            <textarea name="content" id="txtArea"></textarea>
                                         </div>
                                     </div>
                                     <button class="btn btn-dark" type="submit">submit</button>
-                                </form>
+                                </form> -->
                             </section>
 
                             <!-- <hr> -->
@@ -232,14 +272,15 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-            crossorigin="anonymous"></script>
-        <script src="assets/javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
 </body>
 
 </html>
