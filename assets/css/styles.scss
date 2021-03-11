@@ -346,19 +346,6 @@ h4 {
 //certifications 
 // ====================================================================================
 
-
-
-// section#certifications {
-//     border: 1px solid transparent;
-// }
-
-// section#certifications .card{
-//     border-radius: 10px;
-//     border: 1px solid transparent;
-//     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.1) ;
-//     margin-bottom: 2rem;
-// }
-
 section#certifications h3{
     font-family: $montserrat, sans-serif;
     font-weight: 700;
@@ -372,22 +359,23 @@ section#certifications h3{
 //contact me form 
 // ====================================================================================
 
-section#contact-me{
+[id="contact-me"] {
     margin-bottom: 4rem;
-}
 
-#contact-me ul{
-    list-style-type: none;
-    padding-left: 0;
-}
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
 
-#contact-me ul li {
-    padding-right: 3rem;
-    font-size: 2rem;
-}
+    ul li {
+        padding-right: 3rem;
+        font-size: 2rem;
+    }
 
-#contact-me ul li a{
-    color: $electric-pink;
+    ul li a{
+        color: $electric-pink;
+    }
+    
 }
 
 input{
@@ -487,13 +475,6 @@ form#contact-form textarea {
     
     }
 
-}
-
-@media only screen and (min-width: 1100px) {
-    .heading {
-        font-size: 80vh;
-    }
-
     #contact-me ul{
         padding-left: 0;
     }
@@ -512,6 +493,14 @@ form#contact-form textarea {
     #contact-me ul li a:hover {
         color: $electric-pink;
     }
+
+}
+
+@media only screen and (min-width: 1100px) {
+    .heading {
+        font-size: 80vh;
+    }
+
 }
 
 @media only screen and (min-width: 1400px) {
