@@ -267,21 +267,26 @@ section#certifications h3 {
   border-bottom: 1px solid #fe019a;
 }
 
-section#contact-me {
-  margin-bottom: 4rem;
+#socials {
+  text-align: center;
 }
 
-#contact-me ul {
+#form-container {
+  margin-top: 3rem;
+}
+
+[id=contact-me] {
+  margin-bottom: 4rem;
+}
+[id=contact-me] ul {
   list-style-type: none;
   padding-left: 0;
 }
-
-#contact-me ul li {
+[id=contact-me] ul li {
   padding-right: 3rem;
   font-size: 2rem;
 }
-
-#contact-me ul li a {
+[id=contact-me] ul li a {
   color: #fe019a;
 }
 
@@ -368,11 +373,6 @@ form#contact-form textarea {
   section#certifications h3 {
     letter-spacing: 0.2rem;
   }
-}
-@media only screen and (min-width: 1100px) {
-  .heading {
-    font-size: 80vh;
-  }
 
   #contact-me ul {
     padding-left: 0;
@@ -391,6 +391,11 @@ form#contact-form textarea {
 
   #contact-me ul li a:hover {
     color: #fe019a;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .heading {
+    font-size: 80vh;
   }
 }
 @media only screen and (min-width: 1400px) {
