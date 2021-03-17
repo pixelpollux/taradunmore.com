@@ -42,12 +42,12 @@ a:hover {
     padding: 10px;
     padding-right: 5rem;
     padding-left: 5rem;
-    -webkit-animation: icon3d 200ms 10;
+    -webkit-animation: icon3d 400ms 5;
     animation: icon3d 200ms 10;
     color: $dark-purple;
     &:hover {
-        -webkit-animation: icon3d 200ms infinite;
-            animation: icon3d 200ms infinite;
+        -webkit-animation: icon3d 800ms infinite;
+            animation: icon3d 800ms infinite;
     }
     }
 
@@ -56,13 +56,13 @@ a:hover {
         text-shadow: 5px 4px $electric-pink, -5px -6px $electric-lemon;
     }
     25% {
-        text-shadow: -5px -6px $electric-pink, 5px 4px $electric-lemon;
+        text-shadow: -5px -6px $electric-pink, 15px 4px $electric-lemon;
     }
     50% {
-        text-shadow: 5px -4px $electric-pink, -8px 4px $electric-lemon;
+        text-shadow: 15px -14px $electric-pink, -8px 4px $electric-lemon;
     }
     75% {
-        text-shadow: -8px -4px $electric-pink, -5px -4px $electric-lemon;
+        text-shadow: -8px -4px $electric-pink, -15px -14px $electric-lemon;
     }
     100% {
         text-shadow: -5px 0 $electric-pink, 5px -4px $electric-lemon;

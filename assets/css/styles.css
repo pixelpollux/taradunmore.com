@@ -19,13 +19,13 @@ a:hover {
   padding: 10px;
   padding-right: 5rem;
   padding-left: 5rem;
-  -webkit-animation: icon3d 200ms 10;
+  -webkit-animation: icon3d 400ms 5;
   animation: icon3d 200ms 10;
   color: #330036;
 }
 .icon-3d:hover {
-  -webkit-animation: icon3d 200ms infinite;
-  animation: icon3d 200ms infinite;
+  -webkit-animation: icon3d 800ms infinite;
+  animation: icon3d 800ms infinite;
 }
 
 @keyframes icon3d {
@@ -33,13 +33,13 @@ a:hover {
     text-shadow: 5px 4px #fe019a, -5px -6px #EDFF00;
   }
   25% {
-    text-shadow: -5px -6px #fe019a, 5px 4px #EDFF00;
+    text-shadow: -5px -6px #fe019a, 15px 4px #EDFF00;
   }
   50% {
-    text-shadow: 5px -4px #fe019a, -8px 4px #EDFF00;
+    text-shadow: 15px -14px #fe019a, -8px 4px #EDFF00;
   }
   75% {
-    text-shadow: -8px -4px #fe019a, -5px -4px #EDFF00;
+    text-shadow: -8px -4px #fe019a, -15px -14px #EDFF00;
   }
   100% {
     text-shadow: -5px 0 #fe019a, 5px -4px #EDFF00;
