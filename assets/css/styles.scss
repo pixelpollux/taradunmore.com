@@ -81,7 +81,7 @@ a:hover {
 }
 
 .button_slide {
-    color: $electric-pink;
+    color: $grey;
     border-radius: 10px;
     padding: 6px 10px;
     display: inline-block;
@@ -98,8 +98,9 @@ a:hover {
 }
 
 .slide_right:hover {
-    box-shadow: inset 0 0 0 50px $electric-lime;
+    box-shadow: inset 0 0 0 50px $dark-purple;
     border: 1px $electric-lemon solid;
+	color: $electric-lemon;
     // box-shadow: inset 400px 0 0 0 $electric-lime;
 }
 
@@ -330,6 +331,7 @@ section h2 {
     font-size: 2rem;
     color: $dark-purple;
     text-shadow: 3px 3px $electric-lemon;
+    text-align: center;
 }
 
 .content-container {
@@ -429,7 +431,7 @@ section#certifications h3{
     }
 
     ul li {
-        padding-right: 3rem;
+        // padding-right: 3rem;
         font-size: 2rem;
     }
 
@@ -515,7 +517,11 @@ form#contact-form textarea {
 
 @media only screen and (min-width: 500px) {
     section h2 {
+        text-align: left;
         font-size: 2.5rem;
+    }
+    #contact-me ul li {
+        padding-right: 3rem;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -542,7 +548,6 @@ form#contact-form textarea {
     
     #contact-me ul li {
         display: inline;
-        padding-right: 3rem;
         font-size: 2rem;
     }
 
@@ -568,16 +573,3 @@ form#contact-form textarea {
         font-size: 9rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
